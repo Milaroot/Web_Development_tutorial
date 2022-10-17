@@ -1,0 +1,19 @@
+ /*class*/
+ 
+ .class_1 {
+     color: blue;
+ }
+ /*id*/
+ 
+ #id_1 {
+     font-size: 20px;
+ }
+ /*標籤*/
+ 
+ h1 {
+     font-size: 1px;
+ }
+ 
+ h1:hover {
+     font-size: 40px;
+ }
