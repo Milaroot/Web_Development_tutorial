@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main_title {
+            text-align: center;
+            color: rgb(34, 41, 41);
+            border-width: 5px;
+            border-style: solid;
+            border-color: brown;
+            border-radius: 45%;
+            background-color: rgb(255, 255, 255);
+            margin: 50px;
+            padding: 50px;
+        }
+        
+        .main_class {
+            text-align: center;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main_title">4 C102K</h1>
+    <h6 class="main_class">48763</h6>
+    <span>測試</span>
+    <script>
+        let h = window.innerHeight;
+        let w = window.innerWidth;
+        document.write(h, " ", w, "<br>");
+
+        //getElementById & getElementsByClassName()
+
+        function main() {
+            setTimeout(function() { //休息 1秒
+                document.getElementById("main_title").innerHTML = Date(); //BY ID更新時間
+                document.getElementsByTagName("span")[0].innerHTML = "沒事"; //BY TagName
+                var x = document.getElementsByClassName("main_class");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].innerHTML = "正常";
+                }
+                main(); //重複呼叫此函式
+            }, 1000)
+        }
+
+        main();
+    </script>
+</body>
+
+</html>

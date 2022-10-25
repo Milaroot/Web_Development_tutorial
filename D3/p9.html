@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick=if_click()>click_me</button>
+    <h1 id="c8763">來看我</h1>
+    <script>
+        function if_click() {
+            window.location.href = "https://www.youtube.com/watch?v=jIQ6UV2onyI";
+        }
+
+        var g = document.getElementById("c8763");
+        g.addEventListener("mouseenter", function() {
+            g.innerHTML = "讚ㄉ";
+        })
+        g.addEventListener("mouseleave", function() {
+            g.innerHTML = "好啊都不要";
+        })
+    </script>
+</body>
+
+</html>

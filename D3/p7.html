@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fib(inp) {
+            var arr = [0, 1];
+            inp -= 2;
+            for (var i = 0; i < inp; i++) {
+                arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
+            }
+            return arr;
+        }
+        var get_inp = parseInt(prompt("G3t Fibonacci"));
+        var f = fib(get_inp);
+        for (var i = 0; i < get_inp; i++) {
+            document.write(f[i]);
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>
